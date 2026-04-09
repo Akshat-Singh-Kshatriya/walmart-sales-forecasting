@@ -49,7 +49,8 @@ The final analysis mathematically maps the exact dollar value added to the Net O
 ## How to Run
 ### 1. Clone the repository:
    ```bash
-   git clone [https://github.com/yourusername/walmart-sales-forecasting.git](https://github.com/yourusername/walmart-sales-forecasting.git)
+   git clone [https://github.com/Akshat-Singh-Kshatriya/walmart-sales-forecasting.git](https://github.com/Akshat-Singh-Kshatriya/walmart-sales-forecasting.git)
+   cd walmart-sales-forecasting
    ```
 ### 2. Install Deependencies
  ```bash
