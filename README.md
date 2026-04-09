@@ -1,6 +1,4 @@
-# Retail Demand Forecasting & Inventory Optimization 
-
-## Executive Summary
+# Retail Demand Forecasting & Inventory Optimization: Walmart
 This project develops a robust time-series forecasting pipeline to predict weekly retail sales, aiming to optimize inventory management and recover lost margins from stockouts and excess holding costs. By moving from classical statistical methods to advanced machine learning ensembles, the project demonstrates a quantifiable impact on the bottom line.
 
 **Key Achievements:**
@@ -9,14 +7,16 @@ This project develops a robust time-series forecasting pipeline to predict weekl
 * Conducted rigorous Time-Series Cross-Validation (Rolling Forecast Origin) to prevent data leakage.
 * Translated forecasting accuracy improvements into projected financial impact, estimating significant recoveries in net operating margin.
 
-## Methodology & Tech Stack
+## Tech Stack
 * **Language:** Python
 * **Data Processing & Feature Engineering:** `pandas`, `numpy`
 * **Classical Modeling:** `statsmodels` (SARIMA)
 * **Machine Learning:** `scikit-learn` (Random Forest, Linear Regression), `xgboost`
 * **Evaluation Metrics:** MAE, RMSE, MAPE, R-Squared
 * **Validation Strategy:** TimeSeriesSplit
-### 📈 Project Impact Summary
+* **Data Source**:**[Walmart Sales Dataset](https://www.kaggle.com/datasets/mikhail1681/walmart-sales)**. 
+  
+### Project Impact Summary
 *Insight: While XGBoost massively overfit the training data (Train MAE: $8k vs Test MAE: $121k), the simpler Linear Regression model successfully generalized the time-series trends.*
 
 | Metric / Business Driver | Baseline (SARIMA) | Best Model (Linear Regression) | Total Improvement |
