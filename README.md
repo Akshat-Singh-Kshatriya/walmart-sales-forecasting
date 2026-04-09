@@ -16,6 +16,16 @@ This project develops a robust time-series forecasting pipeline to predict weekl
 * **Machine Learning:** `scikit-learn` (Random Forest, Linear Regression), `xgboost`
 * **Evaluation Metrics:** MAE, RMSE, MAPE, R-Squared
 * **Validation Strategy:** TimeSeriesSplit
+### 📈 Project Impact Summary
+*Insight: While XGBoost massively overfit the training data (Train MAE: $8k vs Test MAE: $121k), the simpler Linear Regression model successfully generalized the time-series trends.*
+
+| Metric / Business Driver | Baseline (SARIMA) | Best Model (Linear Regression) | Total Improvement |
+| :--- | :--- | :--- | :--- |
+| **Weekly Forecasting Error (MAE)** | $72,099 | $57,309 | **Reduced error by $14,790/week** |
+| **Annualized Precision Gained** | - | - | **$769,080 less error per year** |
+| **Recovered Stockout Margin** | - | - | **+$115,362 / year** |
+| **Saved Inventory Holding Cost**| - | - | **+$76,916 / year** |
+| **Total Net Operating Margin Impact** | - | - | **+$192,278 / year** |
 
 ## Model Performance
 The project evaluates five distinct algorithms. The baseline was established using SARIMA(1,1,1)(1,1,0,52) to account for annual retail seasonality.
@@ -42,3 +52,6 @@ The final analysis mathematically maps the exact dollar value added to the Net O
    git clone [https://github.com/yourusername/walmart-sales-forecasting.git](https://github.com/yourusername/walmart-sales-forecasting.git)
    ```
 ### 2. Install Deependencies
+ ```bash
+   pip install -r requirements.txt
+   ```
